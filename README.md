@@ -18,9 +18,11 @@ The repository contains the `TonTestJava.java` example of use.
 Compile and Run:
 
 ```bash
-javac drinkless/org/ton/Client.java
+cd src
 
-java -cp . -Djava.library.path=$(pwd) drinkless/org/ton/TonTestJava.java
+javac drinkless/org/ton/TonTestJava.java
+
+java -cp . -Djava.library.path=$(pwd) drinkless/org/ton/TonTestJava
 ```
 
 # Build tonlib and generate TonApi.java

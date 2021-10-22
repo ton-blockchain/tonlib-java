@@ -3,6 +3,7 @@ package drinkless.org.ton;
 import java.util.concurrent.CountDownLatch;
 import drinkless.org.ton.Client;
 import drinkless.org.ton.TonApi;
+import drinkless.org.ton.GlobalConfig;
 
 public class TonTestJava {
     static class JavaClient {
