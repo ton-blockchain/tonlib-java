@@ -25,6 +25,8 @@ javac drinkless/org/ton/TonTestJava.java
 java -cp . -Djava.library.path=$(pwd) drinkless/org/ton/TonTestJava
 ```
 
+To run example on MacOS please install openssl via Homebrew: `brew install openssl@1.1`
+
 # Build tonlib and generate TonApi.java
 
 The repository contains already built libraries for MacOS and Ubuntu.
