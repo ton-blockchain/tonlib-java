@@ -56,7 +56,7 @@ export JAVA_INCLUDE_PATH2=${JAVA_HOME}/include/linux
 
 ## Install TON Dependencies
 
-Install the newest versions of make, cmake (version 3.0.2 or later), OpenSSL (version 1.1.1 or later, including C header files), and g++ or clang (or another C++14-compatible compiler as appropriate for your operating system).
+Install the newest versions of make, cmake (version 3.22.1 or later), OpenSSL (version 1.1.1 or later, including C header files), and g++ or clang (or another C++14-compatible compiler as appropriate for your operating system).
 
 ## Generate and build
 
