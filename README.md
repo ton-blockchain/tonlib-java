@@ -35,6 +35,8 @@ You can take the latest library and TonApi.java from [TON autobuilds](https://gi
 
 * native-lib.dll for Windows (You can take TonApi.java from MacOS or Ununtu autobuild)
 
+> Note: there are no autobuilds for the Apple M1 processor yet.
+
 # Build tonlib and generate TonApi.java
 
 If necessary, you can manually rebuild the C++ libraries and re-generate TonApi.java as described below.
