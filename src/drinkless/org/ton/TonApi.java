@@ -27,13 +27,13 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class AccountAddress extends Object {
         public String accountAddress;
 
         /**
-         *
+         * 
          */
         public AccountAddress() {
         }
@@ -57,13 +57,13 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class AccountList extends Object {
         public FullAccountState[] accounts;
 
         /**
-         *
+         * 
          */
         public AccountList() {
         }
@@ -87,13 +87,13 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class AccountRevisionList extends Object {
         public FullAccountState[] revisions;
 
         /**
-         *
+         * 
          */
         public AccountRevisionList() {
         }
@@ -125,7 +125,7 @@ public class TonApi {
         public byte[] frozenHash;
 
         /**
-         *
+         * 
          */
         public RawAccountState() {
         }
@@ -150,66 +150,12 @@ public class TonApi {
         }
     }
 
-    public static class TestWalletAccountState extends AccountState {
-        public int seqno;
-
-        /**
-         *
-         */
-        public TestWalletAccountState() {
-        }
-
-        public TestWalletAccountState(int seqno) {
-            this.seqno = seqno;
-        }
-
-        /**
-         * Identifier uniquely determining type of the object.
-         */
-        public static final int CONSTRUCTOR = -2053909931;
-
-        /**
-         * @return this.CONSTRUCTOR
-         */
-        @Override
-        public int getConstructor() {
-            return CONSTRUCTOR;
-        }
-    }
-
-    public static class WalletAccountState extends AccountState {
-        public int seqno;
-
-        /**
-         *
-         */
-        public WalletAccountState() {
-        }
-
-        public WalletAccountState(int seqno) {
-            this.seqno = seqno;
-        }
-
-        /**
-         * Identifier uniquely determining type of the object.
-         */
-        public static final int CONSTRUCTOR = -390017192;
-
-        /**
-         * @return this.CONSTRUCTOR
-         */
-        @Override
-        public int getConstructor() {
-            return CONSTRUCTOR;
-        }
-    }
-
     public static class WalletV3AccountState extends AccountState {
         public long walletId;
         public int seqno;
 
         /**
-         *
+         * 
          */
         public WalletV3AccountState() {
         }
@@ -238,7 +184,7 @@ public class TonApi {
         public int seqno;
 
         /**
-         *
+         * 
          */
         public WalletHighloadV1AccountState() {
         }
@@ -266,7 +212,7 @@ public class TonApi {
         public long walletId;
 
         /**
-         *
+         * 
          */
         public WalletHighloadV2AccountState() {
         }
@@ -289,38 +235,11 @@ public class TonApi {
         }
     }
 
-    public static class TestGiverAccountState extends AccountState {
-        public int seqno;
-
-        /**
-         *
-         */
-        public TestGiverAccountState() {
-        }
-
-        public TestGiverAccountState(int seqno) {
-            this.seqno = seqno;
-        }
-
-        /**
-         * Identifier uniquely determining type of the object.
-         */
-        public static final int CONSTRUCTOR = -696813142;
-
-        /**
-         * @return this.CONSTRUCTOR
-         */
-        @Override
-        public int getConstructor() {
-            return CONSTRUCTOR;
-        }
-    }
-
     public static class DnsAccountState extends AccountState {
         public long walletId;
 
         /**
-         *
+         * 
          */
         public DnsAccountState() {
         }
@@ -350,7 +269,7 @@ public class TonApi {
         public RwalletConfig config;
 
         /**
-         *
+         * 
          */
         public RwalletAccountState() {
         }
@@ -382,7 +301,7 @@ public class TonApi {
         public String description;
 
         /**
-         *
+         * 
          */
         public PchanAccountState() {
         }
@@ -411,7 +330,7 @@ public class TonApi {
         public byte[] frozenHash;
 
         /**
-         *
+         * 
          */
         public UninitedAccountState() {
         }
@@ -440,7 +359,7 @@ public class TonApi {
     public static class ActionNoop extends Action {
 
         /**
-         *
+         * 
          */
         public ActionNoop() {
         }
@@ -464,7 +383,7 @@ public class TonApi {
         public boolean allowSendToUninited;
 
         /**
-         *
+         * 
          */
         public ActionMsg() {
         }
@@ -492,7 +411,7 @@ public class TonApi {
         public DnsAction[] actions;
 
         /**
-         *
+         * 
          */
         public ActionDns() {
         }
@@ -519,7 +438,7 @@ public class TonApi {
         public PchanAction action;
 
         /**
-         *
+         * 
          */
         public ActionPchan() {
         }
@@ -546,7 +465,7 @@ public class TonApi {
         public RwalletActionInit action;
 
         /**
-         *
+         * 
          */
         public ActionRwallet() {
         }
@@ -570,13 +489,13 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class AdnlAddress extends Object {
         public String adnlAddress;
 
         /**
-         *
+         * 
          */
         public AdnlAddress() {
         }
@@ -600,13 +519,13 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class Bip39Hints extends Object {
         public String[] words;
 
         /**
-         *
+         * 
          */
         public Bip39Hints() {
         }
@@ -630,7 +549,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class Config extends Object {
         public String config;
@@ -639,7 +558,7 @@ public class TonApi {
         public boolean ignoreCache;
 
         /**
-         *
+         * 
          */
         public Config() {
         }
@@ -666,13 +585,13 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class Data extends Object {
         public byte[] bytes;
 
         /**
-         *
+         * 
          */
         public Data() {
         }
@@ -696,14 +615,14 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class Error extends Object {
         public int code;
         public String message;
 
         /**
-         *
+         * 
          */
         public Error() {
         }
@@ -728,13 +647,13 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class ExportedEncryptedKey extends Object {
         public byte[] data;
 
         /**
-         *
+         * 
          */
         public ExportedEncryptedKey() {
         }
@@ -758,13 +677,13 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class ExportedKey extends Object {
         public String[] wordList;
 
         /**
-         *
+         * 
          */
         public ExportedKey() {
         }
@@ -788,13 +707,13 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class ExportedPemKey extends Object {
         public String pem;
 
         /**
-         *
+         * 
          */
         public ExportedPemKey() {
         }
@@ -818,13 +737,13 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class ExportedUnencryptedKey extends Object {
         public byte[] data;
 
         /**
-         *
+         * 
          */
         public ExportedUnencryptedKey() {
         }
@@ -848,7 +767,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class Fees extends Object {
         public long inFwdFee;
@@ -857,7 +776,7 @@ public class TonApi {
         public long fwdFee;
 
         /**
-         *
+         * 
          */
         public Fees() {
         }
@@ -884,7 +803,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class FullAccountState extends Object {
         public AccountAddress address;
@@ -896,7 +815,7 @@ public class TonApi {
         public int revision;
 
         /**
-         *
+         * 
          */
         public FullAccountState() {
         }
@@ -933,7 +852,7 @@ public class TonApi {
         public byte[] data;
 
         /**
-         *
+         * 
          */
         public RawInitialAccountState() {
         }
@@ -957,88 +876,12 @@ public class TonApi {
         }
     }
 
-    public static class TestGiverInitialAccountState extends InitialAccountState {
-
-        /**
-         *
-         */
-        public TestGiverInitialAccountState() {
-        }
-
-        /**
-         * Identifier uniquely determining type of the object.
-         */
-        public static final int CONSTRUCTOR = -1448412176;
-
-        /**
-         * @return this.CONSTRUCTOR
-         */
-        @Override
-        public int getConstructor() {
-            return CONSTRUCTOR;
-        }
-    }
-
-    public static class TestWalletInitialAccountState extends InitialAccountState {
-        public String publicKey;
-
-        /**
-         *
-         */
-        public TestWalletInitialAccountState() {
-        }
-
-        public TestWalletInitialAccountState(String publicKey) {
-            this.publicKey = publicKey;
-        }
-
-        /**
-         * Identifier uniquely determining type of the object.
-         */
-        public static final int CONSTRUCTOR = 819380068;
-
-        /**
-         * @return this.CONSTRUCTOR
-         */
-        @Override
-        public int getConstructor() {
-            return CONSTRUCTOR;
-        }
-    }
-
-    public static class WalletInitialAccountState extends InitialAccountState {
-        public String publicKey;
-
-        /**
-         *
-         */
-        public WalletInitialAccountState() {
-        }
-
-        public WalletInitialAccountState(String publicKey) {
-            this.publicKey = publicKey;
-        }
-
-        /**
-         * Identifier uniquely determining type of the object.
-         */
-        public static final int CONSTRUCTOR = -1122166790;
-
-        /**
-         * @return this.CONSTRUCTOR
-         */
-        @Override
-        public int getConstructor() {
-            return CONSTRUCTOR;
-        }
-    }
-
     public static class WalletV3InitialAccountState extends InitialAccountState {
         public String publicKey;
         public long walletId;
 
         /**
-         *
+         * 
          */
         public WalletV3InitialAccountState() {
         }
@@ -1067,7 +910,7 @@ public class TonApi {
         public long walletId;
 
         /**
-         *
+         * 
          */
         public WalletHighloadV1InitialAccountState() {
         }
@@ -1096,7 +939,7 @@ public class TonApi {
         public long walletId;
 
         /**
-         *
+         * 
          */
         public WalletHighloadV2InitialAccountState() {
         }
@@ -1126,7 +969,7 @@ public class TonApi {
         public long walletId;
 
         /**
-         *
+         * 
          */
         public RwalletInitialAccountState() {
         }
@@ -1156,7 +999,7 @@ public class TonApi {
         public long walletId;
 
         /**
-         *
+         * 
          */
         public DnsInitialAccountState() {
         }
@@ -1184,7 +1027,7 @@ public class TonApi {
         public PchanConfig config;
 
         /**
-         *
+         * 
          */
         public PchanInitialAccountState() {
         }
@@ -1215,7 +1058,7 @@ public class TonApi {
         public byte[] localPassword;
 
         /**
-         *
+         * 
          */
         public InputKeyRegular() {
         }
@@ -1242,7 +1085,7 @@ public class TonApi {
     public static class InputKeyFake extends InputKey {
 
         /**
-         *
+         * 
          */
         public InputKeyFake() {
         }
@@ -1262,14 +1105,14 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class Key extends Object {
         public String publicKey;
         public byte[] secret;
 
         /**
-         *
+         * 
          */
         public Key() {
         }
@@ -1300,7 +1143,7 @@ public class TonApi {
         public String directory;
 
         /**
-         *
+         * 
          */
         public KeyStoreTypeDirectory() {
         }
@@ -1326,7 +1169,7 @@ public class TonApi {
     public static class KeyStoreTypeInMemory extends KeyStoreType {
 
         /**
-         *
+         * 
          */
         public KeyStoreTypeInMemory() {
         }
@@ -1523,12 +1366,12 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class Ok extends Object {
 
         /**
-         *
+         * 
          */
         public Ok() {
         }
@@ -1548,14 +1391,14 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class Options extends Object {
         public Config config;
         public KeyStoreType keystoreType;
 
         /**
-         *
+         * 
          */
         public Options() {
         }
@@ -1585,7 +1428,7 @@ public class TonApi {
     public static class SyncStateDone extends SyncState {
 
         /**
-         *
+         * 
          */
         public SyncStateDone() {
         }
@@ -1610,7 +1453,7 @@ public class TonApi {
         public int currentSeqno;
 
         /**
-         *
+         * 
          */
         public SyncStateInProgress() {
         }
@@ -1636,7 +1479,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class UnpackedAccountAddress extends Object {
         public int workchainId;
@@ -1645,7 +1488,7 @@ public class TonApi {
         public byte[] addr;
 
         /**
-         *
+         * 
          */
         public UnpackedAccountAddress() {
         }
@@ -1679,7 +1522,7 @@ public class TonApi {
         public byte[] data;
 
         /**
-         *
+         * 
          */
         public UpdateSendLiteServerQuery() {
         }
@@ -1707,7 +1550,7 @@ public class TonApi {
         public SyncState syncState;
 
         /**
-         *
+         * 
          */
         public UpdateSyncState() {
         }
@@ -1736,7 +1579,7 @@ public class TonApi {
     public static class DnsActionDeleteAll extends DnsAction {
 
         /**
-         *
+         * 
          */
         public DnsActionDeleteAll() {
         }
@@ -1760,7 +1603,7 @@ public class TonApi {
         public int category;
 
         /**
-         *
+         * 
          */
         public DnsActionDelete() {
         }
@@ -1788,7 +1631,7 @@ public class TonApi {
         public DnsEntry entry;
 
         /**
-         *
+         * 
          */
         public DnsActionSet() {
         }
@@ -1812,7 +1655,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class DnsEntry extends Object {
         public String name;
@@ -1820,7 +1663,7 @@ public class TonApi {
         public DnsEntryData entry;
 
         /**
-         *
+         * 
          */
         public DnsEntry() {
         }
@@ -1852,7 +1695,7 @@ public class TonApi {
         public byte[] bytes;
 
         /**
-         *
+         * 
          */
         public DnsEntryDataUnknown() {
         }
@@ -1879,7 +1722,7 @@ public class TonApi {
         public String text;
 
         /**
-         *
+         * 
          */
         public DnsEntryDataText() {
         }
@@ -1906,7 +1749,7 @@ public class TonApi {
         public AccountAddress resolver;
 
         /**
-         *
+         * 
          */
         public DnsEntryDataNextResolver() {
         }
@@ -1933,7 +1776,7 @@ public class TonApi {
         public AccountAddress smcAddress;
 
         /**
-         *
+         * 
          */
         public DnsEntryDataSmcAddress() {
         }
@@ -1960,7 +1803,7 @@ public class TonApi {
         public AdnlAddress adnlAddress;
 
         /**
-         *
+         * 
          */
         public DnsEntryDataAdnlAddress() {
         }
@@ -1984,13 +1827,13 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class DnsResolved extends Object {
         public DnsEntry[] entries;
 
         /**
-         *
+         * 
          */
         public DnsResolved() {
         }
@@ -2014,7 +1857,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class TonBlockId extends Object {
         public int workchain;
@@ -2022,7 +1865,7 @@ public class TonApi {
         public int seqno;
 
         /**
-         *
+         * 
          */
         public TonBlockId() {
         }
@@ -2048,14 +1891,14 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class InternalTransactionId extends Object {
         public long lt;
         public byte[] hash;
 
         /**
-         *
+         * 
          */
         public InternalTransactionId() {
         }
@@ -2080,7 +1923,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class LiteServerInfo extends Object {
         public long now;
@@ -2088,7 +1931,7 @@ public class TonApi {
         public long capabilities;
 
         /**
-         *
+         * 
          */
         public LiteServerInfo() {
         }
@@ -2121,7 +1964,7 @@ public class TonApi {
         public byte[] initState;
 
         /**
-         *
+         * 
          */
         public MsgDataRaw() {
         }
@@ -2149,7 +1992,7 @@ public class TonApi {
         public byte[] text;
 
         /**
-         *
+         * 
          */
         public MsgDataText() {
         }
@@ -2176,7 +2019,7 @@ public class TonApi {
         public byte[] text;
 
         /**
-         *
+         * 
          */
         public MsgDataDecryptedText() {
         }
@@ -2203,7 +2046,7 @@ public class TonApi {
         public byte[] text;
 
         /**
-         *
+         * 
          */
         public MsgDataEncryptedText() {
         }
@@ -2227,14 +2070,14 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class MsgDataDecrypted extends Object {
         public byte[] proof;
         public MsgData data;
 
         /**
-         *
+         * 
          */
         public MsgDataDecrypted() {
         }
@@ -2259,13 +2102,13 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class MsgDataDecryptedArray extends Object {
         public MsgDataDecrypted[] elements;
 
         /**
-         *
+         * 
          */
         public MsgDataDecryptedArray() {
         }
@@ -2289,14 +2132,14 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class MsgDataEncrypted extends Object {
         public AccountAddress source;
         public MsgData data;
 
         /**
-         *
+         * 
          */
         public MsgDataEncrypted() {
         }
@@ -2321,13 +2164,13 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class MsgDataEncryptedArray extends Object {
         public MsgDataEncrypted[] elements;
 
         /**
-         *
+         * 
          */
         public MsgDataEncryptedArray() {
         }
@@ -2351,7 +2194,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class MsgMessage extends Object {
         public AccountAddress destination;
@@ -2360,7 +2203,7 @@ public class TonApi {
         public MsgData data;
 
         /**
-         *
+         * 
          */
         public MsgMessage() {
         }
@@ -2387,14 +2230,14 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class OptionsConfigInfo extends Object {
         public long defaultWalletId;
         public String defaultRwalletInitPublicKey;
 
         /**
-         *
+         * 
          */
         public OptionsConfigInfo() {
         }
@@ -2419,13 +2262,13 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class OptionsInfo extends Object {
         public OptionsConfigInfo configInfo;
 
         /**
-         *
+         * 
          */
         public OptionsInfo() {
         }
@@ -2458,7 +2301,7 @@ public class TonApi {
         public long minB;
 
         /**
-         *
+         * 
          */
         public PchanActionInit() {
         }
@@ -2490,7 +2333,7 @@ public class TonApi {
         public PchanPromise promise;
 
         /**
-         *
+         * 
          */
         public PchanActionClose() {
         }
@@ -2518,7 +2361,7 @@ public class TonApi {
     public static class PchanActionTimeout extends PchanAction {
 
         /**
-         *
+         * 
          */
         public PchanActionTimeout() {
         }
@@ -2538,7 +2381,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class PchanConfig extends Object {
         public String alicePublicKey;
@@ -2550,7 +2393,7 @@ public class TonApi {
         public long channelId;
 
         /**
-         *
+         * 
          */
         public PchanConfig() {
         }
@@ -2580,7 +2423,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class PchanPromise extends Object {
         public byte[] signature;
@@ -2589,7 +2432,7 @@ public class TonApi {
         public long channelId;
 
         /**
-         *
+         * 
          */
         public PchanPromise() {
         }
@@ -2628,7 +2471,7 @@ public class TonApi {
         public long B;
 
         /**
-         *
+         * 
          */
         public PchanStateInit() {
         }
@@ -2667,7 +2510,7 @@ public class TonApi {
         public long B;
 
         /**
-         *
+         * 
          */
         public PchanStateClose() {
         }
@@ -2701,7 +2544,7 @@ public class TonApi {
         public long B;
 
         /**
-         *
+         * 
          */
         public PchanStatePayout() {
         }
@@ -2726,14 +2569,14 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class QueryFees extends Object {
         public Fees sourceFees;
         public Fees[] destinationFees;
 
         /**
-         *
+         * 
          */
         public QueryFees() {
         }
@@ -2758,7 +2601,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class QueryInfo extends Object {
         public long id;
@@ -2768,7 +2611,7 @@ public class TonApi {
         public byte[] initState;
 
         /**
-         *
+         * 
          */
         public QueryInfo() {
         }
@@ -2796,7 +2639,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class RawFullAccountState extends Object {
         public long balance;
@@ -2808,7 +2651,7 @@ public class TonApi {
         public long syncUtime;
 
         /**
-         *
+         * 
          */
         public RawFullAccountState() {
         }
@@ -2838,7 +2681,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class RawMessage extends Object {
         public AccountAddress source;
@@ -2851,7 +2694,7 @@ public class TonApi {
         public MsgData msgData;
 
         /**
-         *
+         * 
          */
         public RawMessage() {
         }
@@ -2882,7 +2725,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class RawTransaction extends Object {
         public long utime;
@@ -2895,7 +2738,7 @@ public class TonApi {
         public RawMessage[] outMsgs;
 
         /**
-         *
+         * 
          */
         public RawTransaction() {
         }
@@ -2926,14 +2769,14 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class RawTransactions extends Object {
         public RawTransaction[] transactions;
         public InternalTransactionId previousTransactionId;
 
         /**
-         *
+         * 
          */
         public RawTransactions() {
         }
@@ -2958,13 +2801,13 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class RwalletActionInit extends Object {
         public RwalletConfig config;
 
         /**
-         *
+         * 
          */
         public RwalletActionInit() {
         }
@@ -2988,14 +2831,14 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class RwalletConfig extends Object {
         public long startAt;
         public RwalletLimit[] limits;
 
         /**
-         *
+         * 
          */
         public RwalletConfig() {
         }
@@ -3020,14 +2863,14 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class RwalletLimit extends Object {
         public int seconds;
         public long value;
 
         /**
-         *
+         * 
          */
         public RwalletLimit() {
         }
@@ -3052,13 +2895,13 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class SmcInfo extends Object {
         public long id;
 
         /**
-         *
+         * 
          */
         public SmcInfo() {
         }
@@ -3088,7 +2931,7 @@ public class TonApi {
         public int number;
 
         /**
-         *
+         * 
          */
         public SmcMethodIdNumber() {
         }
@@ -3115,7 +2958,7 @@ public class TonApi {
         public String name;
 
         /**
-         *
+         * 
          */
         public SmcMethodIdName() {
         }
@@ -3139,7 +2982,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class SmcRunResult extends Object {
         public long gasUsed;
@@ -3147,7 +2990,7 @@ public class TonApi {
         public int exitCode;
 
         /**
-         *
+         * 
          */
         public SmcRunResult() {
         }
@@ -3173,7 +3016,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class TonBlockIdExt extends Object {
         public int workchain;
@@ -3183,7 +3026,7 @@ public class TonApi {
         public byte[] fileHash;
 
         /**
-         *
+         * 
          */
         public TonBlockIdExt() {
         }
@@ -3211,13 +3054,13 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class TvmCell extends Object {
         public byte[] bytes;
 
         /**
-         *
+         * 
          */
         public TvmCell() {
         }
@@ -3241,13 +3084,13 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class TvmList extends Object {
         public TvmStackEntry[] elements;
 
         /**
-         *
+         * 
          */
         public TvmList() {
         }
@@ -3271,13 +3114,13 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class TvmNumberDecimal extends Object {
         public String number;
 
         /**
-         *
+         * 
          */
         public TvmNumberDecimal() {
         }
@@ -3301,13 +3144,13 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class TvmSlice extends Object {
         public byte[] bytes;
 
         /**
-         *
+         * 
          */
         public TvmSlice() {
         }
@@ -3337,7 +3180,7 @@ public class TonApi {
         public TvmSlice slice;
 
         /**
-         *
+         * 
          */
         public TvmStackEntrySlice() {
         }
@@ -3364,7 +3207,7 @@ public class TonApi {
         public TvmCell cell;
 
         /**
-         *
+         * 
          */
         public TvmStackEntryCell() {
         }
@@ -3391,7 +3234,7 @@ public class TonApi {
         public TvmNumberDecimal number;
 
         /**
-         *
+         * 
          */
         public TvmStackEntryNumber() {
         }
@@ -3418,7 +3261,7 @@ public class TonApi {
         public TvmTuple tuple;
 
         /**
-         *
+         * 
          */
         public TvmStackEntryTuple() {
         }
@@ -3445,7 +3288,7 @@ public class TonApi {
         public TvmList list;
 
         /**
-         *
+         * 
          */
         public TvmStackEntryList() {
         }
@@ -3471,7 +3314,7 @@ public class TonApi {
     public static class TvmStackEntryUnsupported extends TvmStackEntry {
 
         /**
-         *
+         * 
          */
         public TvmStackEntryUnsupported() {
         }
@@ -3491,13 +3334,13 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      */
     public static class TvmTuple extends Object {
         public TvmStackEntry[] elements;
 
         /**
-         *
+         * 
          */
         public TvmTuple() {
         }
@@ -3571,7 +3414,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link Key Key} </p>
      */
@@ -3580,7 +3423,7 @@ public class TonApi {
         public byte[] newLocalPassword;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link Key Key} </p>
          */
@@ -3607,14 +3450,14 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link Ok Ok} </p>
      */
     public static class Close extends Function {
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link Ok Ok} </p>
          */
@@ -3636,7 +3479,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link Key Key} </p>
      */
@@ -3646,7 +3489,7 @@ public class TonApi {
         public byte[] randomExtraSeed;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link Key Key} </p>
          */
@@ -3674,7 +3517,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link QueryInfo QueryInfo} </p>
      */
@@ -3686,7 +3529,7 @@ public class TonApi {
         public InitialAccountState initialAccountState;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link QueryInfo QueryInfo} </p>
          */
@@ -3716,7 +3559,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link Data Data} </p>
      */
@@ -3725,7 +3568,7 @@ public class TonApi {
         public byte[] secret;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link Data Data} </p>
          */
@@ -3752,14 +3595,14 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link Ok Ok} </p>
      */
     public static class DeleteAllKeys extends Function {
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link Ok Ok} </p>
          */
@@ -3781,7 +3624,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link Ok Ok} </p>
      */
@@ -3789,7 +3632,7 @@ public class TonApi {
         public Key key;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link Ok Ok} </p>
          */
@@ -3815,7 +3658,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link DnsResolved DnsResolved} </p>
      */
@@ -3826,7 +3669,7 @@ public class TonApi {
         public int ttl;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link DnsResolved DnsResolved} </p>
          */
@@ -3855,7 +3698,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link Data Data} </p>
      */
@@ -3864,7 +3707,7 @@ public class TonApi {
         public byte[] secret;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link Data Data} </p>
          */
@@ -3891,7 +3734,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link ExportedEncryptedKey ExportedEncryptedKey} </p>
      */
@@ -3900,7 +3743,7 @@ public class TonApi {
         public byte[] keyPassword;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link ExportedEncryptedKey ExportedEncryptedKey} </p>
          */
@@ -3927,7 +3770,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link ExportedKey ExportedKey} </p>
      */
@@ -3935,7 +3778,7 @@ public class TonApi {
         public InputKey inputKey;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link ExportedKey ExportedKey} </p>
          */
@@ -3961,7 +3804,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link ExportedPemKey ExportedPemKey} </p>
      */
@@ -3970,7 +3813,7 @@ public class TonApi {
         public byte[] keyPassword;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link ExportedPemKey ExportedPemKey} </p>
          */
@@ -3997,7 +3840,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link ExportedUnencryptedKey ExportedUnencryptedKey} </p>
      */
@@ -4005,7 +3848,7 @@ public class TonApi {
         public InputKey inputKey;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link ExportedUnencryptedKey ExportedUnencryptedKey} </p>
          */
@@ -4031,7 +3874,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link AccountAddress AccountAddress} </p>
      */
@@ -4041,7 +3884,7 @@ public class TonApi {
         public int workchainId;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link AccountAddress AccountAddress} </p>
          */
@@ -4069,7 +3912,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link FullAccountState FullAccountState} </p>
      */
@@ -4077,7 +3920,7 @@ public class TonApi {
         public AccountAddress accountAddress;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link FullAccountState FullAccountState} </p>
          */
@@ -4103,7 +3946,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link Bip39Hints Bip39Hints} </p>
      */
@@ -4111,7 +3954,7 @@ public class TonApi {
         public String prefix;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link Bip39Hints Bip39Hints} </p>
          */
@@ -4268,7 +4111,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link AccountRevisionList AccountRevisionList} </p>
      */
@@ -4277,7 +4120,7 @@ public class TonApi {
         public String rwalletInitPublicKey;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link AccountRevisionList AccountRevisionList} </p>
          */
@@ -4304,7 +4147,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link AccountRevisionList AccountRevisionList} </p>
      */
@@ -4313,7 +4156,7 @@ public class TonApi {
         public int workchainId;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link AccountRevisionList AccountRevisionList} </p>
          */
@@ -4340,7 +4183,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link Key Key} </p>
      */
@@ -4350,7 +4193,7 @@ public class TonApi {
         public ExportedEncryptedKey exportedEncryptedKey;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link Key Key} </p>
          */
@@ -4378,7 +4221,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link Key Key} </p>
      */
@@ -4388,7 +4231,7 @@ public class TonApi {
         public ExportedKey exportedKey;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link Key Key} </p>
          */
@@ -4416,7 +4259,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link Key Key} </p>
      */
@@ -4426,7 +4269,7 @@ public class TonApi {
         public ExportedPemKey exportedKey;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link Key Key} </p>
          */
@@ -4454,7 +4297,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link Key Key} </p>
      */
@@ -4463,7 +4306,7 @@ public class TonApi {
         public ExportedUnencryptedKey exportedUnencryptedKey;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link Key Key} </p>
          */
@@ -4490,7 +4333,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link OptionsInfo OptionsInfo} </p>
      */
@@ -4498,7 +4341,7 @@ public class TonApi {
         public Options options;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link OptionsInfo OptionsInfo} </p>
          */
@@ -4524,7 +4367,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link Data Data} </p>
      */
@@ -4534,7 +4377,7 @@ public class TonApi {
         public int iterations;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link Data Data} </p>
          */
@@ -4562,14 +4405,14 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link LiteServerInfo LiteServerInfo} </p>
      */
     public static class LiteServerGetInfo extends Function {
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link LiteServerInfo LiteServerInfo} </p>
          */
@@ -4591,7 +4434,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link MsgDataDecryptedArray MsgDataDecryptedArray} </p>
      */
@@ -4600,7 +4443,7 @@ public class TonApi {
         public MsgDataEncryptedArray data;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link MsgDataDecryptedArray MsgDataDecryptedArray} </p>
          */
@@ -4627,7 +4470,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link MsgData MsgData} </p>
      */
@@ -4636,7 +4479,7 @@ public class TonApi {
         public MsgDataEncrypted data;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link MsgData MsgData} </p>
          */
@@ -4663,7 +4506,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link Ok Ok} </p>
      */
@@ -4672,7 +4515,7 @@ public class TonApi {
         public Error error;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link Ok Ok} </p>
          */
@@ -4699,7 +4542,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link Ok Ok} </p>
      */
@@ -4708,7 +4551,7 @@ public class TonApi {
         public byte[] bytes;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link Ok Ok} </p>
          */
@@ -4735,7 +4578,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link OptionsConfigInfo OptionsConfigInfo} </p>
      */
@@ -4743,7 +4586,7 @@ public class TonApi {
         public Config config;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link OptionsConfigInfo OptionsConfigInfo} </p>
          */
@@ -4769,7 +4612,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link OptionsConfigInfo OptionsConfigInfo} </p>
      */
@@ -4777,7 +4620,7 @@ public class TonApi {
         public Config config;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link OptionsConfigInfo OptionsConfigInfo} </p>
          */
@@ -4803,7 +4646,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link AccountAddress AccountAddress} </p>
      */
@@ -4811,7 +4654,7 @@ public class TonApi {
         public UnpackedAccountAddress accountAddress;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link AccountAddress AccountAddress} </p>
          */
@@ -4837,7 +4680,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link Data Data} </p>
      */
@@ -4845,7 +4688,7 @@ public class TonApi {
         public PchanPromise promise;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link Data Data} </p>
          */
@@ -4871,7 +4714,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link PchanPromise PchanPromise} </p>
      */
@@ -4880,7 +4723,7 @@ public class TonApi {
         public PchanPromise promise;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link PchanPromise PchanPromise} </p>
          */
@@ -4907,7 +4750,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link PchanPromise PchanPromise} </p>
      */
@@ -4915,7 +4758,7 @@ public class TonApi {
         public byte[] data;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link PchanPromise PchanPromise} </p>
          */
@@ -4941,7 +4784,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link Ok Ok} </p>
      */
@@ -4950,7 +4793,7 @@ public class TonApi {
         public PchanPromise promise;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link Ok Ok} </p>
          */
@@ -4977,7 +4820,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link QueryFees QueryFees} </p>
      */
@@ -4986,7 +4829,7 @@ public class TonApi {
         public boolean ignoreChksig;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link QueryFees QueryFees} </p>
          */
@@ -5013,7 +4856,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link Ok Ok} </p>
      */
@@ -5021,7 +4864,7 @@ public class TonApi {
         public long id;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link Ok Ok} </p>
          */
@@ -5047,7 +4890,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link QueryInfo QueryInfo} </p>
      */
@@ -5055,7 +4898,7 @@ public class TonApi {
         public long id;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link QueryInfo QueryInfo} </p>
          */
@@ -5081,7 +4924,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link Ok Ok} </p>
      */
@@ -5089,7 +4932,7 @@ public class TonApi {
         public long id;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link Ok Ok} </p>
          */
@@ -5115,7 +4958,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link Ok Ok} </p>
      */
@@ -5125,7 +4968,7 @@ public class TonApi {
         public byte[] data;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link Ok Ok} </p>
          */
@@ -5153,7 +4996,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link QueryInfo QueryInfo} </p>
      */
@@ -5164,7 +5007,7 @@ public class TonApi {
         public byte[] body;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link QueryInfo QueryInfo} </p>
          */
@@ -5193,7 +5036,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link RawFullAccountState RawFullAccountState} </p>
      */
@@ -5201,7 +5044,7 @@ public class TonApi {
         public AccountAddress accountAddress;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link RawFullAccountState RawFullAccountState} </p>
          */
@@ -5227,7 +5070,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link RawTransactions RawTransactions} </p>
      */
@@ -5237,7 +5080,7 @@ public class TonApi {
         public InternalTransactionId fromTransactionId;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link RawTransactions RawTransactions} </p>
          */
@@ -5265,7 +5108,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link Ok Ok} </p>
      */
@@ -5273,7 +5116,7 @@ public class TonApi {
         public byte[] body;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link Ok Ok} </p>
          */
@@ -5299,7 +5142,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link Ok Ok} </p>
      */
@@ -5307,7 +5150,7 @@ public class TonApi {
         public String dir;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link Ok Ok} </p>
          */
@@ -5471,7 +5314,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link TvmCell TvmCell} </p>
      */
@@ -5479,7 +5322,7 @@ public class TonApi {
         public long id;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link TvmCell TvmCell} </p>
          */
@@ -5505,7 +5348,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link TvmCell TvmCell} </p>
      */
@@ -5513,7 +5356,7 @@ public class TonApi {
         public long id;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link TvmCell TvmCell} </p>
          */
@@ -5539,7 +5382,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link TvmCell TvmCell} </p>
      */
@@ -5547,7 +5390,7 @@ public class TonApi {
         public long id;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link TvmCell TvmCell} </p>
          */
@@ -5573,7 +5416,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link SmcInfo SmcInfo} </p>
      */
@@ -5581,7 +5424,7 @@ public class TonApi {
         public AccountAddress accountAddress;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link SmcInfo SmcInfo} </p>
          */
@@ -5607,7 +5450,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link SmcRunResult SmcRunResult} </p>
      */
@@ -5617,7 +5460,7 @@ public class TonApi {
         public TvmStackEntry[] stack;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link SmcRunResult SmcRunResult} </p>
          */
@@ -5645,14 +5488,14 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link TonBlockIdExt TonBlockIdExt} </p>
      */
     public static class Sync extends Function {
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link TonBlockIdExt TonBlockIdExt} </p>
          */
@@ -5674,7 +5517,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link UnpackedAccountAddress UnpackedAccountAddress} </p>
      */
@@ -5682,7 +5525,7 @@ public class TonApi {
         public String accountAddress;
 
         /**
-         * Default constructor for a function, which
+         * Default constructor for a function, which 
          *
          * <p> Returns {@link UnpackedAccountAddress UnpackedAccountAddress} </p>
          */
@@ -5708,7 +5551,7 @@ public class TonApi {
     }
 
     /**
-     *
+     * 
      *
      * <p> Returns {@link Object Object} </p>
      */

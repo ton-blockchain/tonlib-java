@@ -25,13 +25,19 @@ javac drinkless/org/ton/TonTestJava.java
 java -cp . -Djava.library.path=$(pwd) drinkless/org/ton/TonTestJava
 ```
 
-To run example on MacOS please install openssl via Homebrew: `brew install openssl@1.1`
+# Artifacts
+
+The repository contains already built libraries for Windows, MacOS and Ubuntu.
+
+You can take the latest library and TonApi.java from [TON autobuilds](https://github.com/newton-blockchain/ton/actions?query=branch%3Amaster+is%3Acompleted).
+
+* tonlib-java/ folder for MacOS and Ubuntu
+
+* native-lib.dll for Windows (You can take TonApi.java from MacOS or Ununtu autobuild)
 
 # Build tonlib and generate TonApi.java
 
-The repository contains already built libraries for MacOS and Ubuntu.
-
-If necessary, you can rebuild the C++ libraries and re-generate TonApi.java as described below.
+If necessary, you can manually rebuild the C++ libraries and re-generate TonApi.java as described below.
 
 ## Set Java variables
 
