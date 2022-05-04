@@ -1,2 +1,4 @@
 .idea
 out/
+*.iml
+src/drinkless/org/ton/*.class
